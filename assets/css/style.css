@@ -65,6 +65,7 @@ li {
 
 nav {
   position: fixed;
+  top:0;
   width: 100%;
   background: #ffffff;
   padding: 12px 0;
@@ -195,6 +196,9 @@ a.customer-btn {
   .menu ul li {
     margin-left: 0;
     padding: 15px 0;
+  }
+  a.login-btn, a.customer-btn{
+    padding-left: 0px!important;
   }
 }
 
