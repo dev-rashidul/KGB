@@ -1,0 +1,185 @@
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .title-text h2 {
+    font-size: 100px;
+  }
+
+  .talent-text {
+    top: -115px;
+  }
+
+  .talent-text h2 {
+    font-size: 112px;
+  }
+
+  .hero-content h1 {
+    font-size: 52px;
+    line-height: 60px;
+  }
+
+  .hero-shape img {
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .title-text h2 {
+    font-size: 85px;
+  }
+
+  .talent-text {
+    top: -115px;
+  }
+
+  .talent-text h2 {
+    font-size: 94px;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+
+  .hero-shape img {
+    width: 70%;
+  }
+
+  .services-shape1 img,
+  .services-shape2 img {
+    width: 80%;
+  }
+
+  .services-card-content h3 {
+    font-size: 30px;
+  }
+
+  .talent-wrapper {
+    padding: 118px 0;
+  }
+
+  .talent-content h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-img {
+    padding-top: 60px;
+  }
+
+  .talent-wrapper {
+    margin-top: 150px;
+  }
+
+  .title-text h2 {
+    font-size: 64px;
+  }
+
+  .talent-text {
+    top: -75px;
+  }
+
+  .talent-text h2 {
+    font-size: 70px;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+
+  .hero-shape img {
+    width: 70%;
+  }
+
+  .services-shape1 img,
+  .services-shape2 img {
+    width: 80%;
+  }
+
+  .services-card-content h3 {
+    font-size: 30px;
+  }
+
+  .talent-wrapper {
+    padding: 50px 0;
+  }
+
+  .talent-content h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .talent-wrapper {
+    margin-top: 150px;
+  }
+
+  .title-text {
+    top: -110px;
+  }
+
+  .title-text h2 {
+    font-size: 52px;
+    text-align: center;
+  }
+
+  .talent-text {
+    top: -112px;
+  }
+
+  .talent-text h2 {
+    font-size: 50px;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+    line-height: 37px;
+  }
+
+  .hero-content p,
+  .services-card-content p,
+  .services-card-content h5 {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .hero-img {
+    padding-top: 60px;
+  }
+
+  .hero-shape img {
+    display: none;
+  }
+
+  .services-wrapper {
+    padding-top: 0;
+  }
+
+  .services-shape1 img,
+  .services-shape2 img {
+    display: none;
+  }
+
+  .services-card-content {
+    padding: 30px 20px;
+  }
+
+  .services-card-content h3 {
+    font-size: 25px;
+  }
+
+  .talent-wrapper {
+    padding: 50px 0;
+  }
+
+  .talent-content h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}

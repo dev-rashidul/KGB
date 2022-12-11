@@ -1,0 +1,425 @@
+/* Base Styles CSS Start */
+
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.primary-btn a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background: #396dff;
+  padding: 16px 77px;
+  border-radius: 20px;
+}
+
+.title-text {
+  position: absolute;
+  top: -80px;
+  left: 0;
+}
+
+.title-text h2 {
+  font-size: 116px;
+  color: #396dff;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+/* Base Styles CSS End */
+
+/* Header Part CSS Start */
+
+/* Navigation Section CSS Start */
+
+nav {
+  position: fixed;
+  width: 100%;
+  background: #ffffff;
+  padding: 12px 0;
+  z-index: 999;
+}
+
+.nav-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+}
+
+.menu ul li {
+  margin: 0 20px;
+  list-style: none;
+}
+
+.menu ul li a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #b2b2b2;
+}
+
+a.login-btn {
+  font-size: 16px;
+  text-align: center;
+  background: #396dff;
+  border: 1px solid #396dff;
+  color: #ffffff !important;
+  padding: 12px 35px;
+  margin-left: 50px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+a.customer-btn {
+  font-size: 16px;
+  text-align: center;
+  background: transparent;
+  border: 1px solid #396dff;
+  color: #396dff !important;
+  padding: 12px 35px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-toggler {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-toggler span {
+  position: relative;
+  width: 20px;
+  height: 2px;
+  background: #000000;
+  display: block;
+  margin: auto;
+  transition: all 0.3s ease;
+}
+
+.nav-toggler.active span {
+  background: #ffffff;
+}
+
+.nav-toggler span::before,
+.nav-toggler span::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000000;
+  transition: all 0.3s ease;
+}
+
+.nav-toggler span::before {
+  transform: translateY(-6px);
+}
+
+.nav-toggler span::after {
+  transform: translateY(6px);
+}
+
+.nav-toggler.active span::before {
+  transform: rotate(45deg);
+}
+
+.nav-toggler.active span::after {
+  transform: rotate(135deg);
+}
+
+@media (max-width: 992px) {
+  .nav-toggler {
+    display: block;
+  }
+  .nav-wrapper {
+    justify-content: space-between;
+    padding: 0;
+  }
+  .menu {
+    max-width: 100%;
+    width: 100%;
+    margin-left: 0;
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: all 0.5s ease;
+  }
+  .menu.active {
+    visibility: visible;
+  }
+  .menu ul {
+    display: block;
+    margin-top: 20px;
+    padding-left: 0 !important;
+    border-top: 1px solid #dddddd;
+  }
+  .menu ul li {
+    margin-left: 0;
+    padding: 15px 0;
+  }
+}
+
+/* Navigation Section CSS Start */
+
+/* Hero Section HTML Start */
+
+.hero-wrapper {
+  background: url(../images/hero-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 180px;
+  padding-bottom: 80px;
+}
+
+.hero-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+.hero-content h1 span {
+  color: #396dff;
+}
+
+.hero-content p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #4d93fb;
+}
+
+.hero-btn {
+  padding-top: 35px;
+}
+
+.hero-img {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-shape {
+  position: absolute;
+  bottom: -90px;
+}
+
+/* Hero Section HTML End */
+
+/* Header Part HTML End */
+
+/* Main Part CSS Start */
+
+/* Services Section CSS Start */
+
+.services-wrapper {
+  padding-top: 80px;
+}
+
+.services-card {
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 2px 4px 250px rgba(90, 90, 90, 0.17);
+  border-radius: 25px;
+}
+
+.services-card-content {
+  padding: 50px;
+}
+
+.services-card-content h3 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  color: #396dff;
+}
+
+.services-card-content p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  padding: 10px 0;
+  color: #000000;
+}
+
+.services-card-content h5 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  padding: 10px 0 35px;
+  color: #4d93fb;
+}
+
+.services-shape1 {
+  position: absolute;
+  top: 70px;
+  left: -100px;
+  z-index: -1;
+}
+
+.services-shape2 {
+  position: absolute;
+  top: -70px;
+  right: -100px;
+  z-index: -1;
+}
+
+/* Services Section CSS End */
+
+/* Talent Section CSS Start */
+
+.talent-wrapper {
+  margin-top: 200px;
+  padding: 107px 0;
+  background: #ffffff;
+  box-shadow: 2px 4px 250px rgba(90, 90, 90, 0.17);
+  border-radius: 20px;
+}
+
+.talent-content {
+  position: relative;
+  z-index: 1;
+}
+
+.talent-content h2 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 49px;
+  text-align: center;
+  color: #022f50;
+}
+
+.talent-content h2 span {
+  color: #115bc8;
+}
+
+.talent-left-shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.talent-right-shape {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.talent-text {
+  top: -135px;
+}
+
+.talent-text h2 {
+  font-size: 130px;
+  color: #396dff;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+/* Talent Section CSS End */
+
+/* Main Part CSS End */
+
+/* Footer Section CSS Start */
+
+footer {
+  margin-top: 100px;
+}
+
+.footer-wrapper {
+  padding: 60px 0;
+}
+
+.footer-about p,
+.footer-contact p {
+  color: #666666;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  font-size: 21px;
+  line-height: 24px;
+  color: #181433;
+  padding-bottom: 20px;
+}
+
+.footer-menu li {
+  padding-bottom: 15px;
+}
+
+.footer-menu li a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #181433;
+}
+
+.footer-contact-btn {
+  padding: 25px 0 40px;
+}
+
+.footer-contact-btn a {
+  font-size: 16px;
+  font-weight: 600;
+  background: transparent;
+  border: 1px solid #396dff;
+  color: #396dff !important;
+  padding: 14px 55px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-social a {
+  padding-right: 35px;
+}
+
+hr {
+  opacity: 1;
+  border: 1px solid #f8f8fe;
+}
+
+.footer-copy p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #181433;
+  padding: 10px 0;
+}
+
+/* Footer Section CSS End */
