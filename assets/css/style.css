@@ -200,6 +200,9 @@ a.customer-btn {
   a.login-btn, a.customer-btn{
     margin-left: 0px!important;
   }
+  a.customer-btn{
+    margin-top: 10px;
+  }
 }
 
 /* Navigation Section CSS Start */
