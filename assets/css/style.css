@@ -198,7 +198,7 @@ a.customer-btn {
     padding: 15px 0;
   }
   a.login-btn, a.customer-btn{
-    padding-left: 0px!important;
+    margin-left: 0px!important;
   }
 }
 
